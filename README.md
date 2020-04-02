@@ -18,17 +18,16 @@ It was released in November 2018.
 
 Copyright 2018 - The LineageOS Project.
 
-![OnePlus 6T](https://cdn2.gsmarena.com/vv/pics/oneplus/oneplus-6t-thunder-purple-1.jpg "OnePlus 6T")
+![OnePlus 6T](https://img.gadgethacks.com/img/43/76/63678412699373/0/install-twrp-recovery-your-oneplus-6t.1280x600.jpg "OnePlus 6T")
 
-## Temporary build instructions
+## build instructions
 
 ```
 # Compiling
-$ m[ake|ka] bootimage systemimage
+$ Clone this device tree along with the common tree, common interfaces and kernel trees in the ancient-devices organization.
+$ Use the vendor tree from TheMuppets or from AOSiP-Devices.
+$ Clone the PixelLiveWallpapers from PixelExperience's GitLab.
+$ Initiate build command with :-
+$ . build/envsetup.sh && lunch ancient_fajita-userdebug && mka bacon
 
-# Installing
-$ fastboot --disable-verity --disable-verification flash vbmeta stock_vbmeta.img
-$ fastboot flash boot boot.img
-$ fastboot flash system system.img
-$ fastboot -w reboot
 ```
