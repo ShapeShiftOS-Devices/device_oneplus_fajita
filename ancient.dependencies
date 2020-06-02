@@ -15,19 +15,8 @@
     "branch"      : "ten"
   },
   {
-    "repository"  : "vendor_google_camera",
-    "target_path" : "vendor/google/camera"
-    "branch"      : "ten"
-  },
-  {
     "repository"  : "vendor_oneplus_camera",
     "target_path" : "vendor/oneplus/camera"
     "branch"      : "ten"    
-  },
-  {
-    "repository"  : "packages_apps_PixelLiveWallpaper",
-    "target_path" : "packages/apps/PixelLiveWallpaper",
-    "branch"      : "ten",
-    "remote"      : "pixel-gitlab"
   }
 ]
