@@ -13,11 +13,5 @@
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "branch"      : "ten"
-  },
-  {
-    "repository"  : "device_twrp_fajita",
-    "target_path" : "device/twrp/fajita",
-    "branch"      : "ten",
-    "clone-depth" : "1"
   }
 ]
