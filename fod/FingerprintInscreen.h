@@ -55,9 +55,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<int32_t> getSize() override;
 
   private:
-    bool mFodCircleVisible;
     bool mIsEnrolling;
-
     sp<IOneplusDisplay> mVendorDisplayService;
     sp<IVendorFingerprintExtensions> mVendorFpService;
 
