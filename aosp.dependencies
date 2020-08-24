@@ -1,8 +1,8 @@
 [
   {
-    "repository"  : "Ashutosh-s-Test-Dumpster/device_oneplus_sdm845-common",
+    "repository"  : "device_oneplus_sdm845-common",
     "target_path" : "device/oneplus/sdm845-common",
-    "branch"      : "ten"
+    "branch"      : "android_10"
   },
   {
     "repository"  : "Ashutosh-s-Test-Dumpster/shapeshift_kernel_op6-t",
@@ -10,8 +10,13 @@
     "branch"      : "ten"
   },
   {
-    "repository"  : "Ashutosh-s-Test-Dumpster/vendor_oneplus",
+    "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus",
-    "branch"      : "ten"
+    "branch"      : "android_10"
+  },
+  {
+    "repository"  : "device_oneplus_common",
+    "target_path" : "device/oneplus/common",
+    "branch"      : "android_10"
   }
 ]
