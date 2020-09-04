@@ -46,18 +46,21 @@ void property_override(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void property_override_dual(char const system_prop[], char const vendor_prop[],
-    char const value[])
+void property_override_multifp(char const buildfp[], char const systemfp[],
+	char const bootimagefp[], char const vendorfp[], char const value[])
 {
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
+	property_override(buildfp, value);
+	property_override(systemfp, value);
+	property_override(bootimagefp, value);
+	property_override(vendorfp, value);
 }
 
 void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/flame/flame:10/QQ3A.200805.001/6578210:user/release-keys");
+    property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
+	    "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
 
     // privapp permisison control
     property_override("ro.control_privapp_permissions", "log");
