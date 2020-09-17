@@ -31,10 +31,6 @@ TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_fajit
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
-# Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_fajita
-TARGET_RECOVERY_DEVICE_MODULES := libinit_fajita
-
 # Prebuilt TWRP BLACK recovery
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := device/oneplus/fajita/twrp/ramdisk-recovery.cpio
 
