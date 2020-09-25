@@ -20,27 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
-
-# Inherit some common Ancient stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, device/oneplus/fajita/configurations.mk)
 
 PRODUCT_NAME := aosp_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := ONEPLUS A6013
-
-# FOD
-TARGET_HAS_FOD := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
