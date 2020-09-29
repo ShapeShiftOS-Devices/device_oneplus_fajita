@@ -20,7 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
-$(call inherit-product, device/oneplus/fajita/configurations.mk)
 
 PRODUCT_NAME := aosp_fajita
 PRODUCT_DEVICE := fajita
