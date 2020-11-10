@@ -30,6 +30,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    vendor/ssos/prebuilt/common/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita \
     vendor.oneplus.fingerprint.extension@1.0 \
