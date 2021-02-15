@@ -27,6 +27,7 @@ $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 # Custom stuff
 SSOS_BUILD_TYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_FOD_ANIMATIONS := true
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
