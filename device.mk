@@ -40,8 +40,8 @@ TARGET_SCREEN_WIDTH := 1080
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita \
-    vendor.oneplus.fingerprint.extension@1.0 \
-    vendor.oneplus.hardware.display@1.0
+    vendor.oneplus.fingerprint.extension@1.0.vendor \
+    vendor.oneplus.hardware.display@1.0.vendor
 
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
