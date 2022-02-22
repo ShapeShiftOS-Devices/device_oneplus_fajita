@@ -23,6 +23,7 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 
 # Inherit some common ShapeShiftOS stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+SSOS_BUILD_TYPE := OFFICIAL
 
 PRODUCT_NAME := ssos_fajita
 PRODUCT_DEVICE := fajita
