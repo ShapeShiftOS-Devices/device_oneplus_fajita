@@ -1,6 +1,7 @@
 [
   {
-    "repository": "android_device_oneplus_sdm845-common",
+    "repository": "device_oneplus_sdm845-common",
+    "remote": "ShapeShiftOS-Devices",
     "target_path": "device/oneplus/sdm845-common"
   }
 ]
